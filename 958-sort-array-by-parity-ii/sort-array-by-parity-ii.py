@@ -1,5 +1,6 @@
 class Solution:
     def sortArrayByParityII(self, nums: List[int]) -> List[int]:
+    
         even=[]
         odd=[]
         for i in nums:
@@ -17,7 +18,8 @@ class Solution:
             else:
                 ans.append(odd[y])    
                 y+=1
-        return ans         
+        return ans     
+        
         
 
 
