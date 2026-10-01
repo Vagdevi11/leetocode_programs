@@ -1,7 +1,11 @@
 /* Write your PL/SQL query statement below */
 
-SELECT C.NAME AS Customers
+
+SELECT c.name as Customers
 FROM
-Customers C LEFT JOIN Orders O
-ON C.id=O.customerId
-WHERE O.id IS NULL;
+Customers c
+LEFT JOIN 
+Orders o
+ON c.id=o.customerId
+WHERE o.id IS NULL
+
