@@ -3,9 +3,7 @@ class Solution:
         count=0
         mx=max(nums)
         for i in range(len(nums)):
-            while nums[i]!=mx:
-                nums[i]+=1
-                count+=1
+            count=count+mx-nums[i]
         return count        
 
 
